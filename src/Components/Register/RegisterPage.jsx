@@ -24,7 +24,7 @@ const RegisterPage = () => {
         };
     }, []);
 
-    const textoDoInput = larguraDaTela >= 660 ? 'Selecionar imagem' : 'Escolha sua imagem';
+    const textoDoInput = larguraDaTela >= 720 ? 'Selecionar imagem' : 'Escolha sua imagem';
 
     return (
         <main className={styles.Container}>
