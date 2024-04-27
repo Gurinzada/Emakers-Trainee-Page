@@ -1,6 +1,8 @@
 @import './Colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -29,6 +31,7 @@
     border-left: 4px solid $SecondColor;
     display: flex;
     flex-direction: column;
+    gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -53,7 +56,6 @@
 
 .Title, label{
     color: $PrimaryColor;
-    font-family: 'Times New Roman', Times, serif;
 }
 label{
     padding-left: 0.75rem;
@@ -83,9 +85,10 @@ label{
 
 .customFileUpload{
     height: 2.8rem;
-    width: 9rem;
+    font-size: 0.8rem;
     padding-top: 0.75rem;
     text-align: center;
+    width: 9rem;
 }
 
 .InputsMinus{
@@ -176,5 +179,7 @@ p{
         height: 1.875rem;
         width: 9.375rem;
     }
-   
+    img{
+        width: 13.75rem;
+    }
 }
