@@ -1,0 +1,215 @@
+@import './Colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.TitleForm{
+    color: $PrimaryColor;
+    font-size: 3rem;
+}
+
+.ContainerLogin{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+}
+
+.ContainerGradient{
+    background: linear-gradient(180deg, $PrimaryColor 50%, $SecondColor 100%);
+    border-left: 4px solid $SecondColor;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.FormLogin{
+    display: grid;
+    grid-template-rows: 0.35fr 1fr
+}
+
+.FieldLogin{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 6.2rem;
+}
+
+.InputContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.EmailContainer, .PasswordContainer{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+input{
+    border-radius: 2rem;
+    border: 1px solid $BackgroundInputColor;
+    background-color: $BackgroundInputColor;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: $PrimaryColor;
+    height: 3.8rem;
+    padding-left: 0.8rem;
+    width: 36.25rem;
+}
+
+
+.LoginBnt{
+    border-radius: 2rem;
+    border: 1px solid $PrimaryColor;
+    background-color: $PrimaryColor;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
+    color: $WitheInputColor;
+    font-size: 1.25rem;
+    height: 3.4rem;
+    transition: .5s;
+    width: 18.75rem;
+}
+
+
+.Eye{
+    bottom: 90%;
+    cursor: pointer;
+    position: absolute;
+    left: 87%;
+    right: 0%;
+    top: 10%;
+}
+
+.TitleGradient,.TextGradient{
+    color: $WitheInputColor;
+    font-size: 3rem;
+}
+
+.TextGradient{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.BntGradient{
+    background-color: $SecondColor;
+    border-radius: 2rem;
+    border: 1px solid $SecondColor;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
+    color: $WitheInputColor;
+    font-size: 1.25rem;
+    height: 3.4rem ;
+    transition: .5s;
+    width: 18.75rem;
+}
+
+button:hover{
+    margin-left: 0.8rem;
+}
+
+label{
+    padding-left: 0.75rem;
+}
+
+.TitleGradientContainer{
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.TextGradientContainer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.BtnContainerGradient{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.TitleContainerLogin{
+    text-align: center;
+}
+
+@media ((max-height: 786px) or (max-width: 968px)) {
+    .InputContainer{
+        gap: 1.5rem;
+    }
+    .FieldLogin{
+        gap: 1.85rem;
+    }
+    .ContainerGradient{
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 968px) {
+    .ContainerLogin{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:  0.10fr 1fr;
+        gap: 4rem;
+    }
+
+    .Eye{
+        top: 40%;
+        width: 2rem;
+    }
+
+    input{
+        height: 2.8rem;
+        width: 16rem;
+    }
+
+    .ContainerGradient{
+        align-items: center;
+        border-top: 4px solid $SecondColor;
+        border-left: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .ContentImg{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Img{
+        width: 14rem;
+    }
+    .LoginBnt{
+        height: 1.8rem;
+        width: 8.125rem;
+    }
+    .BntGradient{
+        height: 2rem;
+        width: 9.375rem;
+    }
+    .TextGradientContainer, .TitleGradientContainer{
+        flex-wrap: wrap;
+    }
+
+    .TextGradient,.TitleGradient{
+        font-size: 2rem;
+    }
+}
+

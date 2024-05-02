@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../Styles/RegisterPage.module.scss';
-import Img from './Img';
-import Button from './Button';
-import Form from './Form';
-import Input from './Input';
-import Label from './Label';
-import Link from './Link';
-import Select from './Select';
-import Title from './Title';
+import Img from '../Common/Img';
+import Button from '../Common/Button';
+import Form from '../Common/Form';
+import Input from '../Common/Input';
+import Label from '../Common/Label';
+import Select from '../Common/Select';
+import Title from '../Common/Title';
+import A from "../Common/A"
 
 const RegisterPage = () => {
     const [larguraDaTela, setLarguraDaTela] = useState(window.innerWidth);
@@ -17,14 +17,14 @@ const RegisterPage = () => {
             setLarguraDaTela(window.innerWidth);
         };
 
-        window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize)
 
         return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
-    const textoDoInput = larguraDaTela >= 720 ? 'Selecionar imagem' : 'Escolha sua imagem';
+    const textoDoInput = larguraDaTela >= 720 ? 'Selecionar imagem' : 'Escolha sua imagem'
 
     return (
         <main className={styles.Container}>
@@ -65,15 +65,15 @@ const RegisterPage = () => {
                 </div>
                 <div className={styles.ContentBnt}>
                     <Button textForBnt={`Registrar-se`} className={styles.BntPurple} />
-                    <Link textForLink={`Já possui conta?`} />
+                    <A path={"/login"} textFor={`Já possui conta?`}/>
                 </div>
             </Form>
             <div className={styles.WrapperIcon}>
                 <Img srcImg={"../../../assets/Logo.svg"} />
-                <p>Venha fazer parte da maior rede social também!</p>
+                <p className={styles.Paragraph}>Venha fazer parte da maior rede social também!</p>
             </div>
         </main>
-    );
-};
+    )
+}
 
-export default RegisterPage;
+export default RegisterPage
