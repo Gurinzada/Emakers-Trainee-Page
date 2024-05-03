@@ -1,3 +1,21 @@
+# InstaClone
+
+Este projeto tem como objetivo desenvolver uma aplicação Front-End responsiva, utilizando as tecnologias React e SASS. O foco está na criação de uma interface dinâmica e adaptável, capaz de oferecer uma experiência de usuário consistente em diferentes dispositivos e tamanhos de tela.
+
+# Instruções
+Para começar a utilizar o projeto, siga os passos abaixo:
+
+1. Baixe o projeto.
+2. No diretório do projeto execute o comando `npm install`
+3. Após cumprir os últimos passos, execute `npm run dev`
+4. Aproveite!
+
+# Imagens
+
+![Registro]("../../assets/RegisterPrint.png")
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
