@@ -12,7 +12,10 @@ Para começar a utilizar o projeto, siga os passos abaixo:
 
 # Imagens
 
-![Registro]("../../assets/RegisterPrint.png")
+![RegistroDesktop]("./assets/RegisterPrint.png")
+
+
+![RegistroMobile]("./assets/RegisterMobilePrint.png")
 
 
 
