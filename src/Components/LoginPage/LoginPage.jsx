@@ -36,7 +36,7 @@ function LoginPage () {
                     </div>
 
                     <div className={styles.ContainerBntLogin}>
-                        <Button textForBnt={`Entrar`} className={styles.LoginBnt}/>
+                        <BntLink TextBnt={`Entrar`} className={styles.LoginBnt} to={`/social`}/>
                     </div>
                 </div>
 

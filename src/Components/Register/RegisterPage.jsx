@@ -8,6 +8,7 @@ import Label from '../Common/Label';
 import Select from '../Common/Select';
 import Title from '../Common/Title';
 import A from "../Common/A"
+import BntLink from '../Common/BntLink';
 
 const RegisterPage = () => {
     const [larguraDaTela, setLarguraDaTela] = useState(window.innerWidth);
@@ -64,7 +65,7 @@ const RegisterPage = () => {
                     </div>
                 </div>
                 <div className={styles.ContentBnt}>
-                    <Button textForBnt={`Registrar-se`} className={styles.BntPurple} />
+                    <BntLink TextBnt={`Registrar-se`} className={styles.BntPurple} to={`/social`}/>
                     <A path={"/login"} textFor={`Já possui conta?`}/>
                 </div>
             </Form>

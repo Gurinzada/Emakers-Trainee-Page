@@ -1,13 +1,6 @@
 @import './Colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-    box-sizing: border-box;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .TitleForm{
     color: $PrimaryColor;
     font-size: 3rem;
@@ -15,7 +8,7 @@
 
 .ContainerLogin{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     height: 100vh;
 }

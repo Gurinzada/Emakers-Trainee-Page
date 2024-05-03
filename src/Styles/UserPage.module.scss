@@ -1,0 +1,65 @@
+@import './Colors.scss';
+.HeaderWrapper{
+    background-image: url("../../assets/Rectangle7.svg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 17rem;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+.HeaderImages{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavIcons{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.Icons{
+    background-color: $WitheInputColor;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.30rem;
+    text-align: center;
+}
+
+.OrageBall{
+    background-color: $SecondColor;
+    border-radius: 50%;
+    height:.635rem;
+    position: absolute;
+    width: .635rem;
+}
+
+.personContainer{
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.PhotoContainer{
+    position: absolute;
+    top: 15%;
+}
+.MyPhoto{
+    position: static;
+}
+
+.EditIcon{
+   position: absolute;
+   top: 80%;
+   right: 10%;
+}
+
+
+
+
+
