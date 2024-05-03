@@ -1,4 +1,3 @@
-import Button from "../Common/Button"
 import Form from "../Common/Form"
 import Img from "../Common/Img"
 import Input from "../Common/Input"
@@ -6,8 +5,22 @@ import Label from "../Common/Label"
 import Title from "../Common/Title"
 import BntLink from "../Common/BntLink"
 import styles from "../../Styles/LoginPage.module.scss"
+import { useState } from "react"
 
 function LoginPage () {
+
+    const [EyeUrl, setUrl] = useState(`../../assets/OpenEye.svg`)
+    const [type, setType] = useState(`password`)
+
+    const handleClick = () => {
+        if(EyeUrl === '../../assets/OpenEye.svg'){
+            setUrl('../../../assets/eye-close-svgrepo-com.svg')
+            setType('text')
+        } else{
+            setUrl('../../assets/OpenEye.svg')
+            setType('password')
+        }
+    }
     return (
         <main className={styles.ContainerLogin}>
             <Form className={styles.FormLogin}>
@@ -29,8 +42,8 @@ function LoginPage () {
                         </div>
                         <div className={styles.PasswordContainer}>
                             <Label labelFor={`PasswordLogin`} textForLabel={`Senha`}/>
-                            <Input id={`PasswordLogin`} typeOf={`password`} className={styles.PasswordInput}/>
-                            <Img srcImg={"../../assets/OpenEye.svg"} className={styles.Eye}/>
+                            <Input id={`PasswordLogin`} typeOf={type} className={styles.PasswordInput}/>
+                            <img src={EyeUrl} alt="" className={styles.Eye} onClick={handleClick} id="Eye"/>
                         </div>
                        
                     </div>

@@ -12,11 +12,16 @@ Para começar a utilizar o projeto, siga os passos abaixo:
 
 # Imagens
 
-![RegistroDesktop]("./assets/RegisterPrint.png")
+![RegistroDesktop]("assets/RegisterPrint.png")
 
+![RegistroMobile]("assets/RegisterMobilePrint.png")
 
-![RegistroMobile]("./assets/RegisterMobilePrint.png")
+![LoginDesktop]("assets/LoginInstaPrint.png")
 
+![LoginMobile]("assets/LoginInstaMobilePrint.png)
+
+![UserDesktop]("assets/UserDesktopPrint.png")
+![UserMobile]("assets/UserMobilePrint.png")
 
 
 # React + Vite
