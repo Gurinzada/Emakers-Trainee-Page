@@ -1,12 +1,24 @@
 @import './Colors.scss';
-.HeaderWrapper{
-    background-image: url("../../assets/Rectangle7.svg");
-    background-size: cover;
+.PrincipalWrapper{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.Opc{
+    display: none;
+}
+
+.HeaderWrapper{
+    background-image: url("../../assets/Rectangle7.svg");
+    background-size: cover;
+    border-bottom: 4px solid $SecondColor;
+    display: flex;
+    flex-direction: column;
     height: 17rem;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 2rem 0rem 2rem;
+    position: relative;
 }
 
 .HeaderImages{
@@ -22,10 +34,13 @@
     justify-content: center;
 }
 
+.IconUnique, .Icons, .EditIcon, .EditIcon2{
+    cursor: pointer;
+}
+
 .Icons{
     background-color: $WitheInputColor;
     border-radius: 50%;
-    cursor: pointer;
     padding: 0.30rem;
     text-align: center;
 }
@@ -46,12 +61,12 @@
 }
 
 .PhotoContainer{
+    align-items: flex-start;
+    display: flex;
     position: absolute;
-    top: 15%;
+    top: 35%;
 }
-.MyPhoto{
-    position: static;
-}
+
 
 .EditIcon{
    position: absolute;
@@ -59,7 +74,100 @@
    right: 10%;
 }
 
+.EditIcon2{
+    position: absolute;
+    right: 5%;
+    top: 93%;
+}
 
+.MainArea{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.InfoUser{
+    align-items: flex-start;
+    border-bottom: 4px solid $SecondColor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0rem 2.5rem 6.5rem;
+    margin: 0rem 16rem 0rem 16rem;
+}
+
+.UserName{
+    color: $BlackColorTitle;
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.UserBio{
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.Gallery{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8.5rem;
+}
+
+.GalleryPhoto:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+@media (max-width:768px) {
+    .Icons, .IconUnique, .OrageBall, .EditIcon2{
+        display: none;
+    }
+
+    .PrincipalWrapper{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    .PhotoContainer{
+        top: 60%;
+        right: 37.5%;
+    }
+    .InfoUser{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+
+    .EditIcon{
+        width: 1.3125rem;
+    }
+    
+    .Opc{
+        display: inline;
+        width: 3.125rem;
+    }
+    .MyPhoto{
+        width: 11.25rem;
+    }
+
+    .Gallery{
+        flex-direction: column;
+    }
+    .GalleryPhoto{
+        width: 12.5rem;
+    }
+    .UserName{
+        font-size: 1.5rem;
+    }
+    .UserBio{
+        font-size: 1rem;
+    }
+    
+}
 
 
 

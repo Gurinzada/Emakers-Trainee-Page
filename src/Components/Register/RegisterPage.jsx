@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../Styles/RegisterPage.module.scss';
 import Img from '../Common/Img';
-import Button from '../Common/Button';
 import Form from '../Common/Form';
 import Input from '../Common/Input';
 import Label from '../Common/Label';
@@ -11,12 +10,12 @@ import A from "../Common/A"
 import BntLink from '../Common/BntLink';
 
 const RegisterPage = () => {
-    const [larguraDaTela, setLarguraDaTela] = useState(window.innerWidth);
+    const [larguraDaTela, setLarguraDaTela] = useState(window.innerWidth)
 
     useEffect(() => {
         const handleResize = () => {
             setLarguraDaTela(window.innerWidth);
-        };
+        }
 
         window.addEventListener('resize', handleResize)
 
