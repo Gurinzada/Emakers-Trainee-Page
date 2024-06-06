@@ -8,9 +8,11 @@ import Select from '../Common/Select';
 import Title from '../Common/Title';
 import A from "../Common/A"
 import BntLink from '../Common/BntLink';
+import useTogglePassword from '../../hooks/usePasswordToggle';
 
 const RegisterPage = () => {
     const [larguraDaTela, setLarguraDaTela] = useState(window.innerWidth)
+    const {type, focusInputPassword, blurPassword} = useTogglePassword()
 
     useEffect(() => {
         const handleResize = () => {
@@ -42,7 +44,7 @@ const RegisterPage = () => {
                 </div>
                 <div className={styles.Content}>
                     <Label textForLabel={`Senha`} labelFor={`UserPassword`} />
-                    <Input id={`UserPassword`} typeOf={`password`} className={styles.Inputs} />
+                    <input type={type} className={styles.Inputs} id='UserPassword' onFocus={focusInputPassword}  onBlur={blurPassword}/>
                 </div>
                 <div className={styles.Content}>
                     <Label textForLabel={`Confirmar Senha`} labelFor={`UserPasswordConfirmation`} />
