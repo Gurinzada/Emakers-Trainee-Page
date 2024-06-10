@@ -17,7 +17,7 @@ app.post("/users", async(req, res) => {
             gender: req.body.gender
         }
     })
-    res.status(201).json(req.body)
+   console.log(res.status(201).json(req.body)) 
 })
 
 app.get("/users", async (req, res) => {
