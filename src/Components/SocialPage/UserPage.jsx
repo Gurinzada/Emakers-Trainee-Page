@@ -22,10 +22,6 @@ export default function UserPage() {
     fetchUserData();
   }, [id]);
 
-  const handleClick = () => {
-    showIcons === false ? setShowIcons(true) : setShowIcons(false)
-  }
-
   return (
     <div className={styles.PrincipalWrapper}>
       <header className={styles.HeaderWrapper}>
